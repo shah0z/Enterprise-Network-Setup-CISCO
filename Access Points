@@ -1,0 +1,8 @@
+! Example for a PC in the IT department on S0's port fa0/2
+Switch(config)# interface fa0/2
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 10
+Switch(config-if)# no shutdown
+Switch(config-if)# end
+
+This is done to assign the access to specific ports of the pc and to ensure correct vlan structure. 
