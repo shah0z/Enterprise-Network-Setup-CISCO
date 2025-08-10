@@ -1,0 +1,8 @@
+! Example for the trunk port connecting to the router or another switch
+Switch(config)# interface fa0/1
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# switchport trunk allowed vlan 10,20,30,99
+Switch(config-if)# no shutdown
+Switch(config-if)# end
+
+Done to allow traffic flow to correct endpoints. 
