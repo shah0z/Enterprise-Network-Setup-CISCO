@@ -1,0 +1,22 @@
+Vlan to divide the network and efficiently manage it.
+
+Switch> enable
+Switch# configure terminal
+Switch(config)# hostname S0
+
+! Create each VLAN
+Switch(config)# vlan 10
+Switch(config-vlan)# name IT
+Switch(config-vlan)# exit
+
+Switch(config)# vlan 20
+Switch(config-vlan)# name HR
+Switch(config-vlan)# exit
+
+Switch(config)# vlan 30
+Switch(config-vlan)# name Finance
+Switch(config-vlan)# exit
+
+Switch(config)# vlan 99
+Switch(config-vlan)# name Shared
+Switch(config-vlan)# exit
